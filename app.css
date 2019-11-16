@@ -13,7 +13,10 @@ html, body {
 body {
   font-weight: 400;
   font-family: 'Raleway', Helvetica, sans-serif;
-  color: #4f4f4f;
+  color: #e8e8e8;
+  background: #252525;
+  background-attachment: fixed !important;
+  background: linear-gradient(#2a2a29, #1c1c1c);
 }
 
 *,
@@ -39,6 +42,7 @@ body {
 #mainContainer p {
   font-size: 16px;
   font-weight: 600;
+  color: #d7cfbe;
 }
 #mainContainer p a {
   text-decoration: none;
