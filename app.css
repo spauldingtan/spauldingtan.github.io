@@ -48,3 +48,7 @@ body {
   text-decoration: none;
   color: inherit;
 }
+
+hr.separator {
+  width: 200px;
+}
