@@ -25,30 +25,105 @@ body {
   box-sizing: inherit;
 }
 
-#mainContainer {
-  width: 100%;
+
+
+
+html, body {
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background-color: #2a2a29;
+  background-attachment: fixed !important;
+  background: linear-gradient(#2a2a29, #1c1c1c);
+  font-family: 'Raleway', Helvetica, sans-serif;
+}
+body {
+  color: #fff;
+  text-align: left;
+  opacity: 0;
+  transition: opacity 0.1s ease-in;
+}
+body.visible {
+  opacity: 1;
+}
+.heroImage {
+  height: 70vh;
+  background-image: url('/coding_heroImage_1.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-#mainContainer h1 {
-  font-size: 60px;
-  margin: 0;
-  font-weight: 400;
+.fullwidth {
+  width: 100%;
 }
-#mainContainer p {
-  font-size: 16px;
+.fullheight {
+  height: 100%;
+}
+.heroText {
+  color: #fff;
+  background: rgba(0,0,0,0.1);
+  -webkit-backdrop-filter: saturate(80%) blur(10px);
+  backdrop-filter: saturate(80%) blur(10px);
+  border-radius: 10px;
+}
+.heroText p {
+  font-size: 1rem;
+}
+h2 {
+  text-transform: uppercase;
+  position: relative;
   font-weight: 600;
-  color: #d7cfbe;
+  font-size: 2rem;
 }
-#mainContainer p a {
-  text-decoration: none;
+h2::after {
+  display: block;
+  content: "";
+  width: 20%;
+  height: 3px;
+  background-color: #999;
+  position: absolute;
+  bottom: -10px;
+  left: 40%;
+  border-radius: 40%;
+}
+.iconContainer {
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 0;
+  max-width: 550px;
+  color: #ccc;
+}
+.iconContainer i,
+.iconContainer ion-icon {
+  font-size: 4rem;
+  position: relative;
+}
+.iconContainer ion-icon[name="logo-ionic"]:hover {
+  color: #4a8bfc;
+}
+.iconContainer-inner {
+  position: relative;
+  margin: 20px;
+}
+.iconContainer-inner .iconLabel {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 100%;
+  font-size: 0.8rem;
   color: inherit;
+  margin: 0;
+  line-height: 1;
 }
 
-hr.separator {
-  width: 200px;
+footer {
+  background-color: black;
+}
+footer a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.1s linear;
+}
+footer a:hover {
+  color: #999;
+  text-decoration: none;
 }
